@@ -1,0 +1,35 @@
+## Update
+
+**Description:** Update device to the database
+
+**Address:** localhost:port/device/update
+
+**Request Type:** POST
+
+**API Parameters:**
+
+|No|Name|Data Type|IsRequired|Sample|Description|Note|
+|---|---|---|---|---|---|---|
+|1|id|Integer|Yes|2|Device id||
+|2|maker|String|Yes|newMaker|Device Maker||
+|3|model|String|Yes|Model7|Device model||
+|4|measurement|String|Yes|temperature|Measurement type of the device||
+|5|measurement_unit|String|Yes|°C|Unit of the measurement||
+|6|status|String|Yes|idle|Device status(using, idle, matenance)||
+
+
+
+**Result:**
+
+Data Type: Text
+
+|No|Name|Data Type|IsRequired|Sample|Description|Note|
+|---|---|---|---|---|---|---|
+|1|body|String|Yes|Update success|Result of response||
+
+
+
+**Result Sample:**
+```
+Update success
+```

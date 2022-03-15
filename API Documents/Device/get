@@ -1,0 +1,42 @@
+## Get
+
+**Description:** Get device from the database
+
+**Address:** localhost:port/device/get
+
+**Request Type:** GET
+
+**API Parameters:**
+
+|No|Name|Data Type|IsRequired|Sample|Description|Note|
+|---|---|---|---|---|---|---|
+|1|id|Integer|Yes|2|Device id||
+
+
+
+**Result:**
+
+Data Type: Text
+
+|No|Name|Data Type|IsRequired|Sample|Description|Note|
+|---|---|---|---|---|---|---|
+|1|id|Integer|Yes|3|Device id||
+|2|maker|String|Yes|Maker1|Device Maker||
+|3|model|String|Yes|Model1|Device model||
+|4|measurement|String|Yes|temperature|Measurement type of the device||
+|5|measurement_unit|String|Yes|°C|Unit of the measurement||
+|6|status|String|Yes|idle|Device status(using, idle, matenance)||
+
+
+
+**Result Sample:**
+```
+{
+    "id": 3,
+    "maker": "Maker1",
+    "measurement": "temperature",
+    "measurement_unit": "°C",
+    "model": "Model1",
+    "status": "idle"
+}
+```

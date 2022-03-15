@@ -1,0 +1,33 @@
+## Add
+
+**Description:** Add device to the database
+
+**Address:** localhost:port/device/add
+
+**Request Type:** POST
+
+**API Parameters:**
+
+|No|Name|Data Type|IsRequired|Sample|Description|Note|
+|---|---|---|---|---|---|---|
+|1|maker|String|Yes|Maker7|Device Maker||
+|2|model|String|Yes|Model7|Device model||
+|3|measurement|String|Yes|temperature|Measurement type of the device||
+|4|measurement_unit|String|Yes|°C|Unit of the measurement||
+
+
+
+**Result:**
+
+Data Type: Text
+
+|No|Name|Data Type|IsRequired|Sample|Description|Note|
+|---|---|---|---|---|---|---|
+|1|body|String|Yes|Successfully add new device|Result of response||
+
+
+
+**Result Sample:**
+```
+Successfully add new device
+```
